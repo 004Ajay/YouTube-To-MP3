@@ -1,7 +1,7 @@
 <b><h1 align="center"> YouTubeToMP3 </h1></b>
 
 <p align="center">
-<img src="readme\interface.png" title = "Database / SQL" width = "333" height='195'></p>
+<img src="readme\interface.png" title = "YouTubeToMP3 Interface"></p>
 
 ---
 
@@ -16,8 +16,8 @@ How to make it yours:
 
 How to make it work:
 
-* Paste the link of your YouTube video
-* Give a name
+* Paste the link of the YouTube video
+* Give a name for your output file
 * Select the output folder
 * Click `Download MP3` 
 
