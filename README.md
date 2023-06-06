@@ -8,7 +8,9 @@
 How to make it yours:
 
 * Download the zip of this repo
-* Go to YouTube-To-MP3 > YouTubeToMP3 > dist > YouTubeToMP3 > `YouTubeToMP3.exe`
+* Go to YouTube-To-MP3-main > YouTubeToMP3 > dist > YouTubeToMP3 > `YouTubeToMP3.exe`
+
+* If your computer shows any warning, select `Run anyway` (it's because your system recognize the .exe file as a foreign object)
 
 * Make a shortcut of `YouTubeToMP3.exe` to Desktop (if you need it frequently)
 
