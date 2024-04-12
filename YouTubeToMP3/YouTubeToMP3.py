@@ -42,7 +42,7 @@ ctk.set_default_color_theme("dark-blue")
 
 root = ctk.CTk()
 root.title("YouTube to MP3")
-root.iconbitmap( resource_path("YM.ico")) # app icon (top left corner)
+root.iconbitmap(resource_path("img\\icon.ico")) # app icon (top left corner)
 root.geometry("500x250")
 
 win_width = root.winfo_screenwidth()
