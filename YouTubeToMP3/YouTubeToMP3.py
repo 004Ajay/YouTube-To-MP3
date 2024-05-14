@@ -28,6 +28,7 @@ def download_mp3():
     filename_text = filename.get()
 
     try:
+        download_info_label.configure(text="Downloading.")
         yt = YouTube(video_url)
         video = yt.streams.filter(only_audio=True).first()
         out_file = video.download(output_path=folder_path)
@@ -35,12 +36,14 @@ def download_mp3():
         os.rename(out_file, new_file)
 
         download_info_label.configure(text="MP3 downloaded & saved successfully.")
-        
-        time.sleep(7)
-        root.destroy()
+
 
     except:
         download_info_label.configure(text="Download Error.")
+
+def close():
+    root.destroy()
+    exit(0)
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
@@ -70,6 +73,10 @@ download_button = ctk.CTkButton(master=frame, text="Download MP3", command=lambd
 download_button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 
 download_info_label = ctk.CTkLabel(master=frame, text="")
-download_info_label.place(relx=0.5, rely=0.63, anchor=tkinter.CENTER)
+download_info_label.place(relx=0.5, rely=0.58, anchor=tkinter.CENTER)
+
+# Close button
+close_button = ctk.CTkButton(master=frame, text="Close", command=close)
+close_button.place(relx=0.5, rely=0.66, anchor=tkinter.CENTER)
 
 root.mainloop()
