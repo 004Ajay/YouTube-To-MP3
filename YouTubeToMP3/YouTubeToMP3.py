@@ -1,6 +1,5 @@
 import os
 import sys
-import time
 import tkinter
 from pytube import YouTube
 import customtkinter as ctk
