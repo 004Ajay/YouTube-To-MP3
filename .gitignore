@@ -1,2 +1,4 @@
 .vscode
 YouTubeToMP3/.logs
+*pyc
+
