@@ -6,25 +6,6 @@ from pytube import YouTube
 import customtkinter as ctk
 from tkinter import filedialog
 import threading
-import logging
-
-log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".logs")
-os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, "app.log")
-
-# Configure the logger
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler(log_file, encoding="utf-8"), # Saves logs to file
-        logging.StreamHandler()                          # Prints logs to terminal
-    ]
-)
-
-logger = logging.getLogger(__name__)
-
-logging.info("Application started successfully.")
 
 APP_ICON = Path("YouTubeToMP3\\img\\icon.ico")  # app icon (top left corner)
 
@@ -62,7 +43,7 @@ def download_mp3():
         download_info_label.configure(text="MP3 downloaded & saved successfully.")
 
     except Exception as e:
-        logging.error(f"Error occurred: {e}")
+        print(f"Error occurred: {e}")
         download_info_label.configure(text="Download Error.")
 
 
