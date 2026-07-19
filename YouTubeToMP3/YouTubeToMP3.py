@@ -7,8 +7,12 @@ import customtkinter as ctk
 from tkinter import filedialog
 import threading
 
-APP_ICON = Path("YouTubeToMP3\\img\\icon.ico")  # app icon (top left corner)
+from core.logger import setup_logger
 
+logger = setup_logger()
+
+APP_ICON = Path("img\\icon.ico")  # app icon (top left corner)
+# D:\AJAYMON\AJAY\Programming\YouTube-To-MP3\YouTubeToMP3\img
 
 def resource_path(relative_path):
     try:
@@ -43,7 +47,7 @@ def download_mp3():
         download_info_label.configure(text="MP3 downloaded & saved successfully.")
 
     except Exception as e:
-        print(f"Error occurred: {e}")
+        logger.error(f"Error occurred: {e}")
         download_info_label.configure(text="Download Error.")
 
 
