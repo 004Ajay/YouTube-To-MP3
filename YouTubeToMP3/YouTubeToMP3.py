@@ -52,7 +52,7 @@ def download_mp3():
     filename_text = filename.get()
 
     try:
-        download_info_label.configure(text="Downloading.")
+        download_info_label.configure(text="Downloading...")
         yt = YouTube(video_url)
         video = yt.streams.filter(only_audio=True).first()
         out_file = video.download(output_path=folder_path)
