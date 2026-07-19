@@ -42,7 +42,8 @@ def download_mp3():
 
         download_info_label.configure(text="MP3 downloaded & saved successfully.")
 
-    except:
+    except Exception as e:
+        print(f"Error occurred: {e}")
         download_info_label.configure(text="Download Error.")
 
 
