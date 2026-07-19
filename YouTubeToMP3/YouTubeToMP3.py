@@ -12,7 +12,6 @@ from core.logger import setup_logger
 logger = setup_logger()
 
 APP_ICON = Path("img\\icon.ico")  # app icon (top left corner)
-# D:\AJAYMON\AJAY\Programming\YouTube-To-MP3\YouTubeToMP3\img
 
 def resource_path(relative_path):
     try:
