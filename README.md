@@ -25,3 +25,18 @@ How to make it work:
 * Click `Download MP3` 
 
 * Wait for a minute (depends on your video length), the audio file will be downloaded to your selected folder as an MP3 file
+
+---
+
+<details>
+
+<br>
+
+TODO
+
+1. Separation of Concerns
+2. Add Tests
+3. Dockerize
+4. TUI
+
+</details>
