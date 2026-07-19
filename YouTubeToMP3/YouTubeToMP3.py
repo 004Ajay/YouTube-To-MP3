@@ -1,10 +1,13 @@
 import os
+from pathlib import Path
 import sys
 import tkinter
 from pytube import YouTube
 import customtkinter as ctk
 from tkinter import filedialog
 import threading
+
+APP_ICON = Path("img\\icon.ico")  # app icon (top left corner)
 
 def resource_path(relative_path):
     try:
@@ -49,7 +52,7 @@ ctk.set_default_color_theme("dark-blue")
 
 root = ctk.CTk()
 root.title("YouTube to MP3")
-root.iconbitmap(resource_path("img\\icon.ico")) # app icon (top left corner)
+root.iconbitmap(resource_path(APP_ICON))
 root.geometry("500x250")
 
 win_width = root.winfo_screenwidth()
