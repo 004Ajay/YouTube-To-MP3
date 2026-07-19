@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 logging.info("Application started successfully.")
 
-APP_ICON = Path("img\\icon.ico")  # app icon (top left corner)
+APP_ICON = Path("YouTubeToMP3\\img\\icon.ico")  # app icon (top left corner)
 
 
 def resource_path(relative_path):
